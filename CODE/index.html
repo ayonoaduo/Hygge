@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Login Form</title>
+		<meta charset = "utf-8" />
+		<link rel="stylesheet" type="text/css" href="inc/style.css">
+		</link>
+	</head>
+	<body>
+		<h3>Login</h3>
+		<form action="index.php" method="post">
+			<p><label>
+				<input type="text" id="username" />
+				Username
+				</label>
+				<span id="username_error" class="hide_error"> 
+					(You must enter your username.)</span>
+			</p>
+			<div id="usernames"></div>
+			<p><label>
+				<input type="text"  id="password" />
+				Password
+				</label>
+				<span id="password_error" class="hide_error">
+					(You must enter your password.)</span>
+			</p>
+			<p>
+				<input type="reset" />
+				<input type="submit"  id="submit" />
+			</p>
+		</form>
+		
+		<p id="tooltip" class="hide_tooltip">placeholder text</p>
+		
+		<script type = "text/javascript"  src = "inc/q5.js" >
+		</script>
+		
+		<script type = "text/javascript"  src = "inc/users_ajax.js" >
+		</script>
+	
+	</body>
+</html>
