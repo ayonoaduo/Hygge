@@ -1,5 +1,5 @@
-
 function Loginform(){
+// initializing variables
 
 var warn="";
 
@@ -10,12 +10,14 @@ var str_user_inputs = "";
 
 var x=document.forms.Login.email.value;
 
+// if email is left empty or email format is wrong, please filled the required file
 if (x==null || x==""){
 
     warn +="Email is empty. \n";
     rt=false;
 
 }
+//code to validate password
 
 else if(x.length > 60)
 {
@@ -50,6 +52,7 @@ if(rt==false){
   alert(warn);
   return false;
 }
+
 
 else{
   alert(str_user_inputs);
