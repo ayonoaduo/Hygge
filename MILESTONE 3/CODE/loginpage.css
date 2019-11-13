@@ -1,188 +1,76 @@
-* {
+
+*
+{
   font-family: 'Economica';
-  font-size: 21px;
+  font-size: 15px;
 }
 
-p {
-  color: black;
-  float: right;
+.content
+{
+  background-color: rgba(0,0,0,0.4);
+  color:white;
+  padding: 45px;
+  height:300px;
+  width:800px;
+  border-radius:5%;
 }
 
-.fadeIn third {
-  color: red;
-  text-align: left;
-  font-size: 18px;
-  font-family: "Tahoma", Geneva, sans-serif;
+h2
+{
+  text-align: center;
+  font-size: 40px;
 }
 
-
-html {
-  background-color: white;
+.login_back
+{
+  margin:0;
+  padding:0;
+  color : white;
+  background:white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  height: 100vh;
+.content2
+{
+  background-color: rgba(0,0,0,0.4);
+  color:white;
+  padding: 45px;
+  height:500px;
+  width:400px;
+  margin: 100px auto;
+  border-radius:5%;
 }
 
-a {
-  color: black;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 20px;
-}
-
-#formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  border: 2px solid black;
-  background: white;
-  padding: 30px;
+input[type=text], input[type=password]
+{
   width: 90%;
-  max-width: 450px;
-  position: relative;
-  padding: 0px;
-  -webkit-box-shadow: 30px 30px 60px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 30px 30px 60px 0 rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-
-#formFooter {
-  background-color: white;
-  border-top: 1px black solid;
-  padding: 25px;
-  text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-}
-
-h2.inactive {
-  color: black;
-}
-
-h2.active {
-  color: black;
-
-}
-
-
-
-input[type=submit],
-input[type=submit],
-input[type=reset] {
-  background-color: white;
-  border: black;
-  color: black;
-  padding: 15px 80px;
-  text-align: center;
-  text-decoration: none;
+  padding: 15px;
+  margin: 5px 0 22px 0;
   display: inline-block;
-  text-transform: uppercase;
-  font-size: 13px;
-  -webkit-box-shadow: 2px 2px 2px 2px black;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 5px 20px 40px 20px;
-
+  border: none;
+  background: #f1f1f1;
 }
 
+a{
 
-
-input[type=text] {
-  background-color: #f6f6f6;
-  border: black;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px;
-  width: 85%;
-  border: 1px solid black;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+	float:left;
 }
 
-input[type=text]:focus {
-  background-color: #fff;
-  border-bottom: 3px solid black;
+.registerbtn
+{
+  background-color: #f4c2c2;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 98%;
+  opacity: 0.9;
 }
 
-
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-div {
-  border: black;
-}
-
-
-.underlineHover:after {
-  display: block;
-  left: 0;
-  bottom: -10px;
-  width: 0;
-  height: 2px;
-  background-color: black;
-  content: "";
-  transition: width 0.2s;
-}
-
-.underlineHover:hover {
-  color: black;
-}
-
-.underlineHover:hover:after {
-  width: 100%;
-}
-
-
-*:focus {
-  outline: none;
-}
-
-#icon {
-  width: 60%;
-}
-
-* {
-  box-sizing: border-box;
-
+#clear{
+  clear:both;
 }

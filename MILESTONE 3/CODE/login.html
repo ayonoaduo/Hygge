@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="login_back">
 
   <head>
-    <Title>Login</Title>
-    <script type="text/javascript" src="validatelogin.js"> </script>
-    <link rel="stylesheet" href="loginpage.css">
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet'>
+    <link rel="stylesheet" href="Loginpage.css">
+    <script type="text/javascript" src="validate_Login.js"></script>
   </head>
-
-  <a href="main.html">
-    <p>LOGOUT</p>
-  </a>
-
 
   <body>
 
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
+    <div class="content2">
+      <h2>Welcome Back</h2>
 
-        <h2 class="active"> Sign In </h2>
+      <form id="Login" onsubmit="return Loginform()" method="post">
 
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="submit" class="registerbtn" value="Login"></input>
 
-        <form id="Login" onsubmit="return LoginForm()" method="post">
-          <input type="text" class="fadeIn second" name="Email" placeholder="Email" required>
-          <input type="text" class="fadeIn third" name="Password" placeholder="Password" required>
-          </br></br>
-          <input type="submit" class="fadeIn fourth" value="Log In">
-        </form>
-
-        <div id="formFooter">
-          <a class="underlineHover" href="#">Forgot Password?</a>
-        </div>
-
-      </div>
+      </form>
+	  </br></br></br></br></br>
+	  <h3><a href="main.html">Logout</a></h3>
     </div>
-
 
   </body>
 
 </html>
+
+
+
+
+
