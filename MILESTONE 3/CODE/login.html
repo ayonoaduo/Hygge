@@ -1,125 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<Title>Login</Title>
-<script type="text/javascript" src="validatelogin.js"> </script>  
-
-<style>
-@CHARSET "UTF-8";
-
-.err_msg{
-color:red;
-	text-align:left;
-	font-size:18px;
-font-family: "Tahoma", Geneva, sans-serif;
-}
-
-section{
-text-align:center;
-margin-top: 10%;
-margin-left: 40%;
-}
-
-.container
-{
-margin-left:-60%;
-
-}
-
-body{
-background-image: url("background.jpg");
-}
-
-table.log{
-height:90px;
-margin:0px;
-
-border-collapse: collapse;
-font-family:"Arial Black", Gadget, sans-serif;
-}
-.signup{
-font-size: 19px;
-font-family:"Arial Black", Gadget, sans-serif;
-margin-top: 5%;
-margin-left: 0%;
-}
-
-h3{
-background-color: #9cc0ff;
-font-family: "Comic Sans MS", cursive, sans-serif;
-font-style: italic;
-text-align: center;
-}
-
-td.name{
-font-size: 30px;
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-color: #e0dd19;
-text-align: right;
-}
-
-.head{
-margin-left:30%;
-}
-
-button{
-width:50px;
- height:30px;
- text-align:center;
-}
-
-.err_msg{
-	color: red;
-	
-	font-size:18px;
-font-family: "Tahoma", Geneva, sans-serif;
-	
-}
-</style>
+	<Title>Login</Title>
+	<script type="text/javascript" src="validatelogin.js"> </script>
+	<link rel="stylesheet" href="loginpage.css">
 </head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+
+<a href="main.html">
+<p>LOGOUT</p>
+</a>
+
 
 <body>
 
-<table class="head">
-<tr>
-<td><img src="Hygge.png" alt="WELCOME IMAGE" height="50px" width="50px"/></td
-></td>
-<td class="name"><h1> HYGGE </h1></td>
-</tr>
-</table>
+	<div class="wrapper fadeInDown">
+	  <div id="formContent" >
 
-<p style="border : 2px solid black;"></p>
+	    <h2 class="active"> Sign In </h2>
 
-<p class="branding">
-<h3>
-"Welcome to Hygge, where you can relax "
-</h3>
-</p>
 
-<section>
-<form id="Login">
-<table class="log">
-<tr><td></td><td><label id="email_msg" class="err_msg"></label></td></tr>
+	    <form id = "Login" onsubmit= "return LoginForm()" method = "post">
+	      <input type="text" class="fadeIn second" name="Email" placeholder="Email" required>
+	      <input type="text"  class="fadeIn third" name="Password" placeholder="Password" required>
+				</br></br>
+	      <input type="submit" class="fadeIn fourth" value="Log In">
+	    </form>
 
-<tr>
-<td>EMAIL:</td>
-<td><input type="text" name="email" ><br/></td>
-</tr>
-<tr><td></td><td><label id="pswd_msg" class="err_msg"></label></td></tr>
-<tr>
-<td>Password:</td>
-<td><input type="password" name="pswrd"></td><br/>
-</tr>
-</table>
-</form>
-<div class="container">
-<input type="button" value="Login" onclick="LoginForm()" style="width:50px; height:30px;"><br/>
-</div>
-</section>
-</a>
-<li><a href="main.html"> Go Back </a></li>
+	    <div id="formFooter">
+	      <a class="underlineHover" href="#">Forgot Password?</a>
+	    </div>
+
+	  </div>
+	</div>
 
 
 </body>

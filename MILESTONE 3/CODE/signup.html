@@ -1,97 +1,32 @@
-
 <!DOCTYPE html>
-<html class = "bg">
+<html class="signup_back">
 
-<style>
-.content{
-  background-color: rgba(0,0,0,0.4);
-  color:white;
+  <head>
+    <title>Sign Up</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet'>
+    <link rel="stylesheet" href="signuppage.css">
+    <script type="text/javascript" src="validate_signup.js"></script>
+  </head>
 
-  padding: 45px;
-  height:300px;
-width:800px;
+  <body>
 
-  border-radius:5%;
-}
+    <div class="content2">
+      <h2>Signup Form</h2>
 
+      <form id="SignUp" onsubmit="return SignUpForm()" method="post">
 
-.bg{
-  margin:0;
-  padding:0;
-  background:url("sign.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Retype Password" name="psw_repeat" required>
+        <input type="submit" class="registerbtn" value="SignUp"></input>
 
-.content2{
-  background-color: rgba(0,0,0,0.4);
-  color:white;
-  padding: 45px;
-  height:500px;
-  width:400px;
-  margin: 100px auto;
-  border-radius:5%;
-}
+      </form>
 
-input[type=text], input[type=password] {
-  width: 90%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
+      <h3><a href="main.html">Go Back</a></h3>
+    </div>
 
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 98%;
-  opacity: 0.9;
-}
+  </body>
 
-
-
-}
-
-footer {
-background-color: rgba(0,0,0,0.7);
-  color: white;
-  position:relative;
-  width:100%;
-  bottom:0;
-}
-
-#clear{
-  clear:both;
-}
-
-
-
-
-</style>
-<head>
-  <title>HYGGE!!!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet">
-  <script type="text/javascript" src="validate_signup.js"></script>
-</head>
-<body>
-  <div class = "content2">
-    <h2>Fill this form out to sign-up, Thanks</h2>
-  <form id = "SignUp" onsubmit = "return SignUpForm()" method = "post">
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
-    <input type="submit" class="registerbtn" value = "SignUp"></input>
-</form>
-<h3>Click <a href = "project.html">here</a> to go back while you can</h3>
-</div>
-</body>
 </html>
