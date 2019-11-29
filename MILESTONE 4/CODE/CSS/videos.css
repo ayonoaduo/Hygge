@@ -1,0 +1,151 @@
+
+
+
+
+h2{
+font-family: 'Economica';
+	font-size: 45px;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+iframe{
+	width: 100%;
+}
+
+
+.main_bck {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  justify-login_message: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Economica';
+  font-size: 17px;
+}
+
+
+
+
+ul {
+  border-style: solid;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.profile-circle {
+width: 45px;
+height: 44px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+-webkit-border-radius: 99em;
+-moz-border-radius: 99em;
+border-radius: 99em;
+border: 2px solid #eee;
+box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+vertical-align: middle;
+}
+
+
+li a,
+.dropbtn {
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  border-style: solid;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+  width: 16.66%;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 1em;
+  color: white;
+  text-decoration-color: green;
+  text-decoration: none;
+  clear: left;
+}
+
+header {
+  padding: 0;
+  margin: 1;
+}
+
+main {
+  margin-left: 180px;
+  border-left: 1px solid gray;
+  padding: 1em;
+  height: 300px;
+  width: 800px;
+}
+
+
+
+
+

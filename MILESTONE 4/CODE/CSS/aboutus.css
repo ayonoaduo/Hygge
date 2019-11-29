@@ -1,0 +1,134 @@
+/*--------------------- BACKGROUND ----------------------*/
+
+html, body 
+{	
+	min-height:100%;
+	padding:10px;
+	margin:10px;
+	font-family: 'Economica';
+	font-size: 20px;
+	background-color:white;
+}
+
+
+.sample
+{
+	display: block;
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top:auto;
+  width: 70%;
+  height: 70%;
+  float: right;
+}
+/*--------------------------- CONTENT -----------------------------*/
+
+#main
+{
+	margin-left:18.8%;
+	margin-right:0;
+	background:white;
+	width: 97.6%; 
+	max-width: 976px;							/* Content Width.*/
+	min-height:100%;
+	padding:10px
+
+}
+
+
+.x{
+	
+	font-size: 30px;
+	margin-left: -15%;
+  margin-right: 10%;
+  margin-top:-35%
+}
+
+h1{
+	margin-left: -20%;
+  margin-right: 5%;
+   margin-right: auto;
+  margin-top: 15%;
+ font-family: 'Abril Fatface';
+	font-size: 70px;
+	/*font-weight: Extra-Bold;	*/
+}
+
+h3 {
+	color:black; 
+	font-size:30px;
+	float:absolute;
+}
+
+
+
+ul {
+  border-style: solid;
+  list-style-type: none;
+  margin: -25px;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+li {
+  float: left;
+}
+
+
+li a,
+.dropbtn {
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  border-style: solid;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+  width: 20%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

@@ -1,4 +1,5 @@
-<?php
+<?php ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 	$validate = true;
 	$error = "";
 	$reg_Email = "/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/";
@@ -7,8 +8,8 @@
 	$reg_Retypepswd = "/^(\S*)?\d+(\S*)?$/";
 	$email = "";
 
-
-	if (isset($_POST["submitted"]) && $_POST["submitted"])
+echo "010101";
+	if (isset($_POST["submit"]) && $_POST["submit"])
 	{
 	    $email = trim($_POST["email"]);
 	    $username = trim($_POST["uname"]);
@@ -17,8 +18,9 @@
 	     
 	    $db = new mysqli("localhost", "ayonoado", "Friday9", "ayonoado");
 	    if ($db->connect_error)
-	    {
+	    {		
 			die ("Connection failed: " . $db->connect_error);
+			
 	    }
 	    
 	    $q1 = "SELECT * FROM Hygge WHERE email = '$email'";
@@ -26,7 +28,7 @@
 
 	    
 	    if($r1->num_rows > 0)
-	    {
+	    {		
 			$validate = false;
 	    }
 	    else
@@ -57,17 +59,12 @@
 	    if($validate == true)
 	    {
 			
-			//add code here to insert a record into the table User;
-			// table User attributes are: email, password, DOB
-			// variables in the form are: email, password, dateFormat, 
-			// start with $q2 =
-			
-			$q2="INSERT INTO Hygge(email, username, password, retype_pswd) VALUES('$email', $username, '$password', '$confirm_password' )";
+			$q2="INSERT INTO Hygge(email, username, password, retype_pswd) VALUES('$email', '$username', '$password', '$confirm_password')";
 			$r2 = $db->query($q2);
 			
-			if ($r2 === true)
+			if ($r2 == true)
 			{
-				header("Location: main.html");
+				header("Location: loggedin.html");
 				$db->close();
 				exit();
 			}
@@ -96,7 +93,7 @@
     <div class="content2">
       <h2>Signup Form</h2>
 
-      <form id="SignUp" onsubmit="return SignUpForm()" method="post">
+      <form action= "signup.php" id="SignUp" method="post" enctype ="multipart/form-data">
 
         <input type="text" placeholder="Enter Email" name="email" required>
         <input type="text" placeholder="Enter Username" name="uname" required>
