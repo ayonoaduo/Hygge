@@ -1,5 +1,5 @@
-<?php ini_set('display_errors', 'On');
-error_reporting(E_ALL);
+<?php //ini_set('display_errors', 'On');
+//error_reporting(E_ALL);
 	$validate = true;
 	$error = "";
 	$reg_Email = "/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/";
@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 	$email = "";
 
 echo "010101";
-	if (isset($_POST["submit"]) && $_POST["submit"])
+	if (isset($_POST["submitted"]) && $_POST["submitted"])
 	{
 	    $email = trim($_POST["email"]);
 	    $username = trim($_POST["uname"]);
@@ -30,6 +30,7 @@ echo "010101";
 	    if($r1->num_rows > 0)
 	    {		
 			$validate = false;
+			echo "failed";
 	    }
 	    else
 	    {
@@ -67,6 +68,7 @@ echo "010101";
 				header("Location: loggedin.html");
 				$db->close();
 				exit();
+				echo "Failed";
 			}
 	    }
 	    else
@@ -93,12 +95,12 @@ echo "010101";
     <div class="content2">
       <h2>Signup Form</h2>
 
-      <form action= "signup.php" id="SignUp" method="post" enctype ="multipart/form-data">
-
-        <input type="text" placeholder="Enter Email" name="email" required>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <input type="password" placeholder="Retype Password" name="psw_repeat" required>
+      <form action= "signup.php" id="SignUp" method="post">
+	  	<input type="hidden" name="submitted" value="1"/>
+        <input type="text" placeholder="Enter Email" id ="email" name="email" required>
+        <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+        <input type="password" placeholder="Retype Password" id="psw_repeat" name="psw_repeat" required>
         <input type="submit" class="registerbtn" value="SignUp"></input>
 
       </form>
